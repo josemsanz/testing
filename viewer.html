@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A simple example</title>
-    <link rel="stylesheet" href="https://testing.trasterox.com/css/pannellum.css"/>
-    <script type="text/javascript" src="https://testing.trasterox.com/js/pannellum.js"></script>
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.3/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
     <style>
     #panorama {
-        width: 600px;
-        height: 400px;
+        width: 100%;
+        height: 100%;
     }
     </style>
 </head>
@@ -19,7 +19,11 @@
 <script>
 pannellum.viewer('panorama', {
     "type": "equirectangular",
-    "panorama": "https://testing.trasterox.com/images/sphere/pano_2_final.jpg"
+    "panorama": "http://localhost/images/sphere/pano_2_final.jpg",
+    "autoLoad": true,
+    "title": "Alto 225cm - Ancho 100cm - Fondo 100cm",
+    "author": "Alto 225cm - Ancho 100cm - Fondo 100cm"
+
 });
 </script>
 
